@@ -38,12 +38,23 @@ if __name__ == '__main__':
     email_address = input('Enter email address: ')
     email_type = input('Enter email_type: ')
     email = Email(email_address, email_type)
-    more_emails = input('Would you like to enter more emails? (Y/N: ')
+    more_emails = input('Would you like to enter more emails? (Y/N): ')
     while more_emails.upper() == "Y":
         email_address = input('Enter email address: ')
         email_type = input('Enter email_type: ')
         email = Email(email_address, email_type)
-        more_emails = input('Would you like to enter more emails? (Y/N: ')
+        more_emails = input('Would you like to enter more emails? (Y/N): ')
         student1.add_email_address(email)
+
+    phone_num = input('Enter phone number: ')
+    phone_type = input('Enter phone type: ')
+    phone = Phone(phone_num, phone_type)
+    more_phone = input('Would you like to enter more phone numbers? (Y/N): ')
+    while more_phone.upper() == "Y":
+        phone_num = input('Enter phone number: ')
+        phone_type = input('Enter phone type: ')
+        phone = Phone(phone_num, phone_type)
+        more_phone = input('Would you like to enter more phone numbers? (Y/N): ')
+        student1.add_phone_number(phone)
 
     student1.display()
