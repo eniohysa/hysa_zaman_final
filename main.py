@@ -10,7 +10,7 @@ if __name__ == '__main__':
     city = input('Enter city: ')
     state = input('Enter state: ')
     zipcode = input('Enter zipcode: ')
-    address_type = input('Enter address_type: ')
+    address_type = input('Enter address type: ')
     mailing_address = Address(street, city, state, zipcode, address_type)
 
     birth_day = input("Enter birth day: ")
@@ -36,12 +36,12 @@ if __name__ == '__main__':
     student1 = Student(student_name, student_id, mailing_address, birth_date, acceptance, start_semester, major)
 
     email_address = input('Enter email address: ')
-    email_type = input('Enter email_type: ')
+    email_type = input('Enter email type: ')
     email = Email(email_address, email_type)
     more_emails = input('Would you like to enter more emails? (Y/N): ')
     while more_emails.upper() == "Y":
         email_address = input('Enter email address: ')
-        email_type = input('Enter email_type: ')
+        email_type = input('Enter email type: ')
         email = Email(email_address, email_type)
         more_emails = input('Would you like to enter more emails? (Y/N): ')
         student1.add_email_address(email)
