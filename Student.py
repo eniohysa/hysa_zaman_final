@@ -64,3 +64,15 @@ class Student:
 
     def get_major(self):
         return self.__major
+
+    def display(self):
+        print(f"Student ID: {self.__student_id}")
+        print(f"Student name: {self.__name}")
+        for email in self.__email_addresses:
+            print(f'Email: {email}')
+        for phone in self.__phone_numbers:
+            print(f'Phone: {phone}')
+        print(f"Birthday: {self.__birth_date}")
+        print(f"Acceptance: {self.__acceptance}")
+        print(f"Major: {self.__major}")
+        print(f"Start {self.__start_semester}")

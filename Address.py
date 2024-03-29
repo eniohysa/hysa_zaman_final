@@ -6,11 +6,12 @@
 
 class Address:
     # Initialize
-    def __init__(self, street, city, state, zipcode):
+    def __init__(self, street, city, state, zipcode, address_type):
         self.__street = street
         self.__city = city
         self.__state = state
         self.__zip = zipcode
+        self.__type = address_type
 
     # Setters
     def set_street(self, street):
@@ -25,6 +26,9 @@ class Address:
     def set_zip(self, zipcode):
         self.__zip = zipcode
 
+    def set_type(self, address_type):
+        self.__address_type = address_type
+
     # Getters
     def get_street(self):
         return self.__street
@@ -37,6 +41,9 @@ class Address:
 
     def get_zip(self):
         return self.__zip
+
+    def get_address_type(self):
+        return self.__address_type
 
     # Print address
     def __str__(self):
